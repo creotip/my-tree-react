@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  float: left;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.video-frame {
+  position: relative;
+  float: left;
+}
+video, canvas {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.slider-frame {
+  padding: 2rem;
+  float: right;
+}
+
+.slider-frame img {
+  max-width: 170px;
+}
+
+.thumbnails {
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.main-image, .main-image img {
+  transition: all 350ms;
+}
+
+.anim-enter {
+  opacity: 0.01;
+}
+
+.anim-enter.anim-enter-active {
+  opacity: 2;
+  transition: opacity 5s ease-in;
+}
+
+
+/*
+list
+ */
+
+.listWrapper {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+ul.tree-root li {
+  padding: 1rem;
+}
+
+.ad-selected-node {
+  background: linear-gradient(to bottom,#beebff 0,#a8e4ff 100%);
+}
+.tree-branch {
+  overflow:hidden;
+}
+
+ul.tree-branch, ul.tree-root {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.branch-toggle, .leaf {
+  margin-right:5px;
+  text-decoration:none;
+  color: black;
+}
+.branch-toggle:hover, .leaf:hover {
+  margin-right:5px;
+  text-decoration:none;
+  color: black;
+}
+.tree-branch input[type="checkbox"] {
+  margin-right: 4px;
+  vertical-align: sub;
+}
+
